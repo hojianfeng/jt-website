@@ -356,25 +356,30 @@ if (enquiryForm) {
     setLoading(true);
 
     try {
-      const response = await fetch('https://formsubmit.co/ajax/hello@jt.edu.sg', {
+      const payload = buildPayload();
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept':        'application/json',
         },
         body: JSON.stringify({
-          ...buildPayload(),
-          _subject: 'New Course Enquiry — JT Business Institute',
-          _template: 'table',
-          _captcha:  'false',
-          _replyto:  document.getElementById('f-email').value,
+          access_key:  'YOUR_WEB3FORMS_KEY',   // <-- replace with key from web3forms.com
+          subject:     'New Course Enquiry — JT Business Institute',
+          from_name:   'JT Business Institute Website',
+          name:        payload.name    || '',
+          email:       payload.email   || '',
+          phone:       payload.phone   || '',
+          company:     payload.company || '',
+          course:      payload.course  || '',
+          message:     payload.message || '',
+          botcheck:    '',
         }),
       });
 
-      // FormSubmit always returns HTTP 200 — success is inside the JSON body
       const data = await response.json();
 
-      if (data.success === 'true' || data.success === true) {
+      if (data.success) {
         formCard.style.display = 'none';
         formSuccess.style.display = 'flex';
         formErrorMsg.style.display = 'none';
