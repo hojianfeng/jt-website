@@ -356,9 +356,6 @@ if (enquiryForm) {
     setLoading(true);
 
     try {
-      /* Using FormSubmit.co — replace the email below with your actual address.
-         FormSubmit will send the form data to that email address.
-         First submission requires email verification from FormSubmit. */
       const response = await fetch('https://formsubmit.co/ajax/hello@jt.edu.sg', {
         method: 'POST',
         headers: {
@@ -370,15 +367,19 @@ if (enquiryForm) {
           _subject: 'New Course Enquiry — JT Business Institute',
           _template: 'table',
           _captcha:  'false',
+          _replyto:  document.getElementById('f-email').value,
         }),
       });
 
-      if (response.ok) {
+      // FormSubmit always returns HTTP 200 — success is inside the JSON body
+      const data = await response.json();
+
+      if (data.success === 'true' || data.success === true) {
         formCard.style.display = 'none';
         formSuccess.style.display = 'flex';
         formErrorMsg.style.display = 'none';
       } else {
-        throw new Error('Server error');
+        throw new Error(data.message || 'Submission failed');
       }
     } catch (err) {
       setLoading(false);
