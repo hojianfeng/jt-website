@@ -377,17 +377,24 @@ if (enquiryForm) {
         }),
       });
 
-      const data = await response.json();
+      let data;
+      try {
+        data = await response.json();
+      } catch (parseErr) {
+        throw new Error('Response was not JSON (HTTP ' + response.status + '). The form service may be unavailable.');
+      }
 
       if (data.success) {
         formCard.style.display = 'none';
         formSuccess.style.display = 'flex';
         formErrorMsg.style.display = 'none';
       } else {
-        throw new Error(data.message || 'Submission failed');
+        throw new Error(data.message || 'Submission rejected by server.');
       }
     } catch (err) {
       setLoading(false);
+      const errEl = document.querySelector('#formErrorMsg p');
+      if (errEl) errEl.textContent = 'Error: ' + err.message;
       formErrorMsg.style.display = 'flex';
       formErrorMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
