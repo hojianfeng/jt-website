@@ -364,7 +364,7 @@ if (enquiryForm) {
           'Accept':        'application/json',
         },
         body: JSON.stringify({
-          access_key:  'YOUR_WEB3FORMS_KEY',   // <-- replace with key from web3forms.com
+          access_key:  '39173b18-6f36-4bb4-8790-f909c3d77ccb',
           subject:     'New Course Enquiry — JT Business Institute',
           from_name:   'JT Business Institute Website',
           name:        payload.name    || '',
