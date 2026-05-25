@@ -250,6 +250,30 @@ input, select, textarea { font-family: inherit; }
 .back-top.show { opacity: 1; transform: none; pointer-events: auto; }
 .back-top:hover { background: var(--brown); }
 
+/* ===== LOGO IMAGE ===== */
+.site-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+  transition: filter var(--transition);
+  /* SVG is near-black — invert to white on dark navbar */
+  filter: brightness(0) invert(1);
+}
+/* Scrolled light navbar: show in original dark colour */
+.navbar.scrolled .site-logo {
+  filter: none;
+}
+/* Dark mode scrolled: back to white */
+[data-theme="dark"] .navbar.scrolled .site-logo {
+  filter: brightness(0) invert(1);
+}
+/* Footer logo: always white */
+.site-logo-footer {
+  height: 44px;
+  filter: brightness(0) invert(1);
+  margin-bottom: 16px;
+}
+
 /* ===== NAVBAR ===== */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0;
