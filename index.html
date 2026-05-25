@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JT Business Institute — Empowering Professionals for the Future of Business. Practical training in AI, Marketing, Business, and Workplace Skills.">
+    <meta name="keywords" content="business training, AI marketing, corporate training, professional development, digital marketing, workplace skills, Malaysia">
+    <meta name="author" content="JT Business Institute">
+    <meta property="og:title" content="JT Business Institute | Professional Business Training">
+    <meta property="og:description" content="Practical, industry-relevant training in artificial intelligence, marketing, business, and workplace transformation.">
+    <meta property="og:type" content="website">
+    <title>JT Business Institute | Empowering Professionals for the Future of Business</title>
+
+    <!-- Google Fonts: Inter (body) + Playfair Display (headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <div class="loader-mark">JT</div>
+            <div class="loader-name">Business Institute</div>
+            <div class="loader-track"><div class="loader-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- ===== DARK MODE TOGGLE ===== -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <a href="https://wa.me/60123456789?text=Hello%2C%20I%27m%20interested%20in%20your%20courses." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tip">Chat on WhatsApp</span>
+    </a>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button class="back-top" id="backTop" aria-label="Scroll back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">
+                <span class="logo-mark">JT</span>
+                <span class="logo-name">Business Institute</span>
+            </a>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li><a href="#home"       class="nl active"    role="menuitem">Home</a></li>
+                <li><a href="#about"      class="nl"           role="menuitem">About</a></li>
+                <li><a href="#courses"    class="nl"           role="menuitem">Courses</a></li>
+                <li><a href="#ai-marketing" class="nl"         role="menuitem">AI Marketing</a></li>
+                <li><a href="#why-jt"     class="nl"           role="menuitem">Why JT</a></li>
+                <li><a href="#contact"    class="nl nl-cta"    role="menuitem">Contact</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="hero-bg-img"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-box">
+            <div class="hero-content">
+                <div class="hero-eyebrow anim-hero">
+                    <i class="fas fa-graduation-cap"></i> Professional Business Training
+                </div>
+                <h1 class="hero-h1 anim-hero">
+                    Empowering Professionals<br>
+                    <em>for the Future of Business</em>
+                </h1>
+                <p class="hero-sub anim-hero">
+                    JT Business Institute delivers practical, industry-relevant training in artificial intelligence, marketing, business, and workplace transformation.
+                </p>
+                <div class="hero-btns anim-hero">
+                    <a href="#courses" class="btn btn-hero-solid"><i class="fas fa-compass"></i> Explore Courses</a>
+                    <a href="#contact" class="btn btn-hero-ghost"><i class="fas fa-envelope"></i> Enquire Now</a>
+                </div>
+                <div class="hero-kpis anim-hero">
+                    <div class="kpi"><span class="kpi-n">500+</span><span class="kpi-l">Learners Trained</span></div>
+                    <div class="kpi-sep"></div>
+                    <div class="kpi"><span class="kpi-n">50+</span><span class="kpi-l">Corporate Workshops</span></div>
+                    <div class="kpi-sep"></div>
+                    <div class="kpi"><span class="kpi-n">5+</span><span class="kpi-l">Course Categories</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section s-about">
+        <div class="container">
+            <div class="sec-hd anim">
+                <span class="tag">About Us</span>
+                <h2 class="sec-title">What is <span class="c-accent">JT Business Institute?</span></h2>
+                <p class="sec-sub">Building careers and businesses through practical, real-world training.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text anim">
+                    <h3>Practical Learning for <span class="c-accent">Real-World Results</span></h3>
+                    <p>JT Business Institute — where <strong>JT</strong> stands for <strong>Job Training</strong> — is a modern training provider dedicated to equipping professionals, business owners, and working adults with the skills they need to thrive in today's rapidly evolving business landscape.</p>
+                    <p>We believe learning should be immediately applicable. Every programme is designed with employability, workplace readiness, and professional development at its core — delivering training that creates measurable impact for individuals and organisations alike.</p>
+                    <div class="checks">
+                        <div class="check-row"><i class="fas fa-circle-check"></i><span>Practical, Applied Learning</span></div>
+                        <div class="check-row"><i class="fas fa-circle-check"></i><span>Industry-Experienced Trainers</span></div>
+                        <div class="check-row"><i class="fas fa-circle-check"></i><span>Modern, Business-Focused Curriculum</span></div>
+                        <div class="check-row"><i class="fas fa-circle-check"></i><span>Suitable for Individuals &amp; Corporate Teams</span></div>
+                    </div>
+                </div>
+                <div class="about-img anim">
+                    <div class="about-img-frame">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=640&q=80&auto=format&fit=crop" alt="Training session at JT Business Institute" loading="lazy">
+                        <div class="about-badge"><i class="fas fa-award"></i><span>Industry-<br>Recognised</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Highlight cards -->
+            <div class="hl-cards anim">
+                <div class="hl-card">
+                    <div class="hl-ico"><i class="fas fa-industry"></i></div>
+                    <h4>Industry-Relevant Training</h4>
+                    <p>Curriculum built around real business challenges and current industry demands.</p>
+                </div>
+                <div class="hl-card">
+                    <div class="hl-ico"><i class="fas fa-briefcase"></i></div>
+                    <h4>Practical Business Skills</h4>
+                    <p>Hands-on, applicable skills you can use in your workplace from day one.</p>
+                </div>
+                <div class="hl-card">
+                    <div class="hl-ico"><i class="fas fa-robot"></i></div>
+                    <h4>AI-Focused Learning</h4>
+                    <p>Cutting-edge AI tools and strategies integrated into every business programme.</p>
+                </div>
+                <div class="hl-card">
+                    <div class="hl-ico"><i class="fas fa-chart-line"></i></div>
+                    <h4>Career-Oriented Development</h4>
+                    <p>Training designed to advance your career and elevate your professional value.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED COURSE: AI MARKETING ===== -->
+    <section id="ai-marketing" class="section s-featured">
+        <div class="container">
+            <div class="sec-hd anim">
+                <span class="tag tag-light">Featured Course</span>
+                <h2 class="sec-title c-white">Transforming Marketing with<br><span class="c-lime">Artificial Intelligence</span></h2>
+                <p class="sec-sub c-white70">A practical course designed for modern marketing and business professionals.</p>
+            </div>
+
+            <div class="feat-grid">
+                <div class="feat-content anim">
+                    <div class="meta-pills">
+                        <span class="pill"><i class="fas fa-signal"></i> Intermediate</span>
+                        <span class="pill"><i class="fas fa-clock"></i> Flexible Duration</span>
+                        <span class="pill"><i class="fas fa-chalkboard-teacher"></i> Workshop Format</span>
+                    </div>
+                    <p class="feat-desc">A practical course designed for <strong>marketing professionals, business owners, digital content creators, brand managers, and campaign managers</strong> who want to use AI tools to improve marketing strategy, content creation, campaign planning, and customer engagement.</p>
+                    <div class="skills-block">
+                        <h4>Skills You'll Gain:</h4>
+                        <div class="skill-tags">
+                            <span><i class="fas fa-brain"></i> AI for Marketing</span>
+                            <span><i class="fas fa-pen-nib"></i> Digital Content Creation</span>
+                            <span><i class="fas fa-bullhorn"></i> Campaign Strategy</span>
+                            <span><i class="fas fa-users"></i> Customer Engagement</span>
+                            <span><i class="fas fa-gears"></i> Marketing Automation</span>
+                            <span><i class="fas fa-chart-bar"></i> Data-Driven Decision Making</span>
+                        </div>
+                    </div>
+                    <div class="feat-btns">
+                        <a href="#contact" class="btn btn-lime"><i class="fas fa-info-circle"></i> View Course Details</a>
+                        <a href="#contact" class="btn btn-ghost-white"><i class="fas fa-hand-pointer"></i> Register Interest</a>
+                    </div>
+                </div>
+                <div class="feat-visual anim">
+                    <div class="feat-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=640&q=80&auto=format&fit=crop" alt="AI Marketing Course" loading="lazy">
+                        <div class="feat-badge"><i class="fas fa-robot"></i><span>AI-Powered<br>Learning</span></div>
+                    </div>
+                    <div class="feat-info-cards">
+                        <div class="feat-info-card">
+                            <i class="fas fa-users"></i>
+                            <div><strong>For Professionals</strong><span>Marketers, Business Owners &amp; Managers</span></div>
+                        </div>
+                        <div class="feat-info-card">
+                            <i class="fas fa-screwdriver-wrench"></i>
+                            <div><strong>Practical Tools</strong><span>Real AI tools applied to real campaigns</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COURSE BENEFITS ===== -->
+    <section id="benefits" class="section s-benefits">
+        <div class="container">
+            <div class="sec-hd anim">
+                <span class="tag">Course Benefits</span>
+                <h2 class="sec-title">Why This Course <span class="c-accent">Matters</span></h2>
+                <p class="sec-sub">Real skills that create real business results.</p>
+            </div>
+            <div class="ben-grid">
+                <div class="ben-card anim">
+                    <div class="ben-ico"><i class="fas fa-robot"></i></div>
+                    <h4>Learn Practical AI Tools for Marketing</h4>
+                    <p>Master AI tools curated specifically for marketing — no technical background required.</p>
+                </div>
+                <div class="ben-card anim">
+                    <div class="ben-ico"><i class="fas fa-bolt"></i></div>
+                    <h4>Improve Productivity &amp; Creativity</h4>
+                    <p>Streamline content creation, campaign planning, and customer engagement with intelligent automation.</p>
+                </div>
+                <div class="ben-card anim">
+                    <div class="ben-ico"><i class="fas fa-bullseye"></i></div>
+                    <h4>Build Stronger Digital Campaigns</h4>
+                    <p>Design data-driven digital campaigns that reach the right audience at the right time.</p>
+                </div>
+                <div class="ben-card anim">
+                    <div class="ben-ico"><i class="fas fa-building"></i></div>
+                    <h4>Apply AI to Real Business Scenarios</h4>
+                    <p>All learning is immediately applicable — take skills from training directly to your business.</p>
+                </div>
+                <div class="ben-card anim">
+                    <div class="ben-ico"><i class="fas fa-people-group"></i></div>
+                    <h4>Suitable for Individuals &amp; Teams</h4>
+                    <p>Perfect for solo professionals upskilling or companies training entire marketing departments.</p>
+                </div>
+                <div class="ben-card anim">
+                    <div class="ben-ico"><i class="fas fa-certificate"></i></div>
+                    <h4>Professional Recognition</h4>
+                    <p>Earn credentials that demonstrate your AI marketing expertise to employers and clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COURSES / PROGRAMMES ===== -->
+    <section id="courses" class="section s-courses">
+        <div class="container">
+            <div class="sec-hd anim">
+                <span class="tag">Our Programmes</span>
+                <h2 class="sec-title">Courses &amp; <span class="c-accent">Programmes</span></h2>
+                <p class="sec-sub">From AI and digital marketing to business management and workplace skills — the full spectrum of modern professional development.</p>
+            </div>
+
+            <!-- Filter bar -->
+            <div class="filter-bar anim" role="group" aria-label="Filter courses by category">
+                <button class="f-btn active" data-filter="all">All Programmes</button>
+                <button class="f-btn" data-filter="ai">Artificial Intelligence</button>
+                <button class="f-btn" data-filter="marketing">Digital Marketing</button>
+                <button class="f-btn" data-filter="business">Business</button>
+                <button class="f-btn" data-filter="workplace">Workplace Skills</button>
+                <button class="f-btn" data-filter="corporate">Corporate</button>
+            </div>
+
+            <div class="c-grid" id="courseGrid">
+                <!-- AI: Featured -->
+                <div class="c-card anim" data-cat="ai">
+                    <div class="c-img">
+                        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=480&q=80&auto=format&fit=crop" alt="AI Marketing" loading="lazy">
+                        <span class="c-badge b-ai">AI</span>
+                    </div>
+                    <div class="c-body">
+                        <div class="c-cat">Artificial Intelligence</div>
+                        <h3>Transforming Marketing with AI</h3>
+                        <p>Use AI tools to revolutionise your marketing strategy, content, and campaigns.</p>
+                        <div class="c-meta"><span><i class="fas fa-clock"></i> Workshop</span><span><i class="fas fa-signal"></i> Intermediate</span></div>
+                        <a href="#contact" class="btn btn-card">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- AI: Operations -->
+                <div class="c-card anim" data-cat="ai">
+                    <div class="c-img">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=480&q=80&auto=format&fit=crop" alt="AI Business Operations" loading="lazy">
+                        <span class="c-badge b-ai">AI</span>
+                        <span class="c-soon">Coming Soon</span>
+                    </div>
+                    <div class="c-body">
+                        <div class="c-cat">Artificial Intelligence</div>
+                        <h3>AI for Business Operations</h3>
+                        <p>Integrate AI into daily business processes to improve efficiency and decisions.</p>
+                        <div class="c-meta"><span><i class="fas fa-clock"></i> Full-Day</span><span><i class="fas fa-signal"></i> All Levels</span></div>
+                        <a href="#contact" class="btn btn-card">Register Interest</a>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="c-card anim" data-cat="marketing">
+                    <div class="c-img">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=480&q=80&auto=format&fit=crop" alt="Digital Marketing" loading="lazy">
+                        <span class="c-badge b-marketing">Marketing</span>
+                    </div>
+                    <div class="c-body">
+                        <div class="c-cat">Digital Marketing</div>
+                        <h3>Digital Marketing Fundamentals</h3>
+                        <p>Master core digital marketing: SEO, social media, email, and paid advertising.</p>
+                        <div class="c-meta"><span><i class="fas fa-clock"></i> 2-Day Workshop</span><span><i class="fas fa-signal"></i> Beginner</span></div>
+                        <a href="#contact" class="btn btn-card">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Business & Management -->
+                <div class="c-card anim" data-cat="business">
+                    <div class="c-img">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=480&q=80&auto=format&fit=crop" alt="Business Strategy" loading="lazy">
+                        <span class="c-badge b-business">Business</span>
+                    </div>
+                    <div class="c-body">
+                        <div class="c-cat">Business &amp; Management</div>
+                        <h3>Business Strategy &amp; Planning</h3>
+                        <p>Develop robust business strategies and execution plans that deliver measurable results.</p>
+                        <div class="c-meta"><span><i class="fas fa-clock"></i> 1-Day Workshop</span><span><i class="fas fa-signal"></i> Intermediate</span></div>
+                        <a href="#contact" class="btn btn-card">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Workplace Skills -->
+                <div class="c-card anim" data-cat="workplace">
+                    <div class="c-img">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=480&q=80&auto=format&fit=crop" alt="Workplace Skills" loading="lazy">
+                        <span class="c-badge b-workplace">Workplace</span>
+                    </div>
+                    <div class="c-body">
+                        <div class="c-cat">Workplace Skills</div>
+                        <h3>Professional Communication &amp; Leadership</h3>
+                        <p>Build essential communication, leadership, and interpersonal skills for workplace success.</p>
+                        <div class="c-meta"><span><i class="fas fa-clock"></i> Half-Day</span><span><i class="fas fa-signal"></i> All Levels</span></div>
+                        <a href="#contact" class="btn btn-card">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Corporate Training -->
+                <div class="c-card anim" data-cat="corporate">
+                    <div class="c-img">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=480&q=80&auto=format&fit=crop" alt="Corporate Training" loading="lazy">
+                        <span class="c-badge b-corporate">Corporate</span>
+                    </div>
+                    <div class="c-body">
+                        <div class="c-cat">Corporate Training</div>
+                        <h3>Customised Corporate Programmes</h3>
+                        <p>Tailored training solutions designed around your organisation's specific needs and goals.</p>
+                        <div class="c-meta"><span><i class="fas fa-clock"></i> Flexible</span><span><i class="fas fa-signal"></i> All Levels</span></div>
+                        <a href="#contact" class="btn btn-card">Get Proposal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE JT ===== -->
+    <section id="why-jt" class="section s-why">
+        <div class="container">
+            <div class="sec-hd anim">
+                <span class="tag tag-light">Why Choose Us</span>
+                <h2 class="sec-title c-white">Why Choose <span class="c-lime">JT Business Institute?</span></h2>
+                <p class="sec-sub c-white70">We deliver training that makes a real difference — practical, relevant, and immediately applicable.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card anim">
+                    <div class="why-ico"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h4>Practical &amp; Applied Learning</h4>
+                    <p>Every programme is built around hands-on application, not just theory. You leave with skills you can use immediately.</p>
+                </div>
+                <div class="why-card anim">
+                    <div class="why-ico"><i class="fas fa-user-tie"></i></div>
+                    <h4>Industry-Experienced Trainers</h4>
+                    <p>Our trainers bring real-world business experience, sharing practical knowledge and insights from the field.</p>
+                </div>
+                <div class="why-card anim">
+                    <div class="why-ico"><i class="fas fa-book-open"></i></div>
+                    <h4>Modern, Business-Focused Curriculum</h4>
+                    <p>Programmes continuously updated to reflect the latest business trends, AI tools, and technologies.</p>
+                </div>
+                <div class="why-card anim">
+                    <div class="why-ico"><i class="fas fa-people-group"></i></div>
+                    <h4>For Working Adults &amp; Companies</h4>
+                    <p>Flexible formats designed around busy schedules — ideal for professionals and corporate team upskilling.</p>
+                </div>
+            </div>
+
+            <!-- Animated statistics -->
+            <div class="stats-row anim" id="statsRow">
+                <div class="stat-box">
+                    <div class="stat-n" data-target="500">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-lbl">Learners Trained</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-n" data-target="50">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-lbl">Corporate Workshops</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-n" data-target="5">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-lbl">Course Categories</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-n" data-target="20">0</div>
+                    <div class="stat-plus">+</div>
+                    <div class="stat-lbl">Industry-Focused Programmes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CORPORATE TRAINING ===== -->
+    <section id="corporate" class="section s-corporate">
+        <div class="container">
+            <div class="corp-grid">
+                <div class="corp-text anim">
+                    <span class="tag">Corporate Training</span>
+                    <h2>Upskill Your Team with Practical Business and AI Training</h2>
+                    <p>We design and deliver customised training programmes that align with your organisation's strategic goals. Whether you need a focused half-day workshop or a comprehensive corporate learning journey, we have the expertise to deliver.</p>
+                    <div class="format-list">
+                        <div class="fmt-row">
+                            <div class="fmt-ico"><i class="fas fa-sun"></i></div>
+                            <div class="fmt-txt"><strong>Half-Day Workshops</strong><span>Focused, intensive sessions on specific skills</span></div>
+                        </div>
+                        <div class="fmt-row">
+                            <div class="fmt-ico"><i class="fas fa-calendar-day"></i></div>
+                            <div class="fmt-txt"><strong>Full-Day Workshops</strong><span>Comprehensive learning with practical exercises</span></div>
+                        </div>
+                        <div class="fmt-row">
+                            <div class="fmt-ico"><i class="fas fa-building-columns"></i></div>
+                            <div class="fmt-txt"><strong>Customised Corporate Programmes</strong><span>Tailored multi-module training journeys</span></div>
+                        </div>
+                        <div class="fmt-row">
+                            <div class="fmt-ico"><i class="fas fa-house"></i></div>
+                            <div class="fmt-txt"><strong>In-House Company Training</strong><span>We come to you — train your team at your premises</span></div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-file-lines"></i> Request Corporate Training Proposal
+                    </a>
+                </div>
+                <div class="corp-img anim">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=640&q=80&auto=format&fit=crop" alt="Corporate training workshop" loading="lazy">
+                    <div class="corp-overlay">
+                        <div class="corp-feat"><i class="fas fa-check"></i> Fully Customisable</div>
+                        <div class="corp-feat"><i class="fas fa-check"></i> Any Team Size</div>
+                        <div class="corp-feat"><i class="fas fa-check"></i> Any Location</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="section s-testimonials">
+        <div class="container">
+            <div class="sec-hd anim">
+                <span class="tag">Testimonials</span>
+                <h2 class="sec-title">What Our <span class="c-accent">Learners Say</span></h2>
+                <p class="sec-sub">Real feedback from professionals who've trained with us.</p>
+            </div>
+            <div class="t-wrap anim">
+                <div class="t-track" id="tTrack">
+                    <div class="t-slide active">
+                        <div class="t-card">
+                            <i class="fas fa-quote-left t-q"></i>
+                            <p>"The AI Marketing course completely transformed how I approach campaigns. I'm now using AI tools daily and my team has seen a 40% improvement in content output. Highly practical and immediately applicable."</p>
+                            <div class="t-author">
+                                <div class="t-av" style="background:var(--brown);">SM</div>
+                                <div class="t-info">
+                                    <strong>Sarah M.</strong>
+                                    <span>Marketing Manager, Technology Company</span>
+                                </div>
+                                <div class="t-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-slide">
+                        <div class="t-card">
+                            <i class="fas fa-quote-left t-q"></i>
+                            <p>"JT Business Institute's corporate training was exactly what our team needed. The trainers understood our industry, and the customised programme delivered real skills our staff could use the very next day."</p>
+                            <div class="t-author">
+                                <div class="t-av" style="background:var(--dark-green);">DL</div>
+                                <div class="t-info">
+                                    <strong>David L.</strong>
+                                    <span>HR Director, Financial Services</span>
+                                </div>
+                                <div class="t-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t-slide">
+                        <div class="t-card">
+                            <i class="fas fa-quote-left t-q"></i>
+                            <p>"As a business owner, I was sceptical about AI for marketing. After the JT workshop, I've integrated AI into my entire content strategy. The ROI has been incredible — more content, better quality, less time."</p>
+                            <div class="t-author">
+                                <div class="t-av" style="background:var(--navy);">JK</div>
+                                <div class="t-info">
+                                    <strong>James K.</strong>
+                                    <span>Small Business Owner</span>
+                                </div>
+                                <div class="t-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-controls">
+                    <button class="t-btn" id="tPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <div class="t-dots" id="tDots">
+                        <button class="t-dot active" aria-label="Testimonial 1"></button>
+                        <button class="t-dot" aria-label="Testimonial 2"></button>
+                        <button class="t-dot" aria-label="Testimonial 3"></button>
+                    </div>
+                    <button class="t-btn" id="tNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="section s-faq">
+        <div class="container">
+            <div class="sec-hd anim">
+                <span class="tag">FAQ</span>
+                <h2 class="sec-title">Frequently Asked <span class="c-accent">Questions</span></h2>
+                <p class="sec-sub">Everything you need to know about our programmes.</p>
+            </div>
+            <div class="faq-list anim">
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>Do I need a technical background for the AI Marketing course?</span>
+                        <i class="fas fa-plus faq-ico"></i>
+                    </button>
+                    <div class="faq-a" role="region">
+                        <p>No technical background is required. Our AI Marketing course is designed for business and marketing professionals — we focus on practical tools and applications, not coding or technical theory.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>Can I arrange corporate training for my team?</span>
+                        <i class="fas fa-plus faq-ico"></i>
+                    </button>
+                    <div class="faq-a" role="region">
+                        <p>Absolutely. We offer fully customisable corporate training programmes, from half-day workshops to comprehensive multi-session programmes. Contact us to discuss your team's needs and we'll create a tailored proposal.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>What training formats do you offer?</span>
+                        <i class="fas fa-plus faq-ico"></i>
+                    </button>
+                    <div class="faq-a" role="region">
+                        <p>We offer half-day workshops, full-day workshops, customised corporate programmes, and in-house company training. Sessions can be delivered in-person at your premises or at a hired venue.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>Are your courses suitable for working adults?</span>
+                        <i class="fas fa-plus faq-ico"></i>
+                    </button>
+                    <div class="faq-a" role="region">
+                        <p>Yes — all our programmes are specifically designed with working adults in mind. They are practical, time-efficient, and immediately applicable to your professional context.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>Will I receive a certificate upon completion?</span>
+                        <i class="fas fa-plus faq-ico"></i>
+                    </button>
+                    <div class="faq-a" role="region">
+                        <p>Yes. Participants who complete our programmes receive a certificate of completion from JT Business Institute, recognising your professional development achievement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>How do I register for a course?</span>
+                        <i class="fas fa-plus faq-ico"></i>
+                    </button>
+                    <div class="faq-a" role="region">
+                        <p>Simply fill in the enquiry form below. Our team will be in touch within 1–2 business days with all the details, including registration, pricing, and course schedules.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / ENQUIRY FORM ===== -->
+    <section id="contact" class="section s-contact">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left: Info -->
+                <div class="contact-info anim">
+                    <span class="tag">Get In Touch</span>
+                    <h2>Ready to Advance Your Career?</h2>
+                    <p>Fill in the form and our team will be in touch within 1–2 business days to discuss how JT Business Institute can help you achieve your learning and business goals.</p>
+                    <div class="ci-list">
+                        <div class="ci-row">
+                            <div class="ci-ico"><i class="fas fa-envelope"></i></div>
+                            <div><strong>Email Us</strong><span>enquiries@jtbusinessinstitute.com</span></div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-ico"><i class="fab fa-whatsapp"></i></div>
+                            <div><strong>WhatsApp</strong><span>+60 12-345 6789</span></div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-ico"><i class="fas fa-location-dot"></i></div>
+                            <div><strong>Location</strong><span>Kuala Lumpur, Malaysia</span></div>
+                        </div>
+                        <div class="ci-row">
+                            <div class="ci-ico"><i class="fas fa-clock"></i></div>
+                            <div><strong>Office Hours</strong><span>Mon–Fri: 9am – 6pm</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="form-col anim">
+                    <div class="form-card" id="formCard">
+                        <form id="enquiryForm" novalidate>
+                            <div class="f-row2">
+                                <div class="f-group">
+                                    <label for="f-name">Full Name <span class="req">*</span></label>
+                                    <input type="text" id="f-name" name="name" placeholder="Your full name" required autocomplete="name">
+                                    <span class="f-err" id="nameErr"></span>
+                                </div>
+                                <div class="f-group">
+                                    <label for="f-email">Email Address <span class="req">*</span></label>
+                                    <input type="email" id="f-email" name="email" placeholder="your@email.com" required autocomplete="email">
+                                    <span class="f-err" id="emailErr"></span>
+                                </div>
+                            </div>
+                            <div class="f-row2">
+                                <div class="f-group">
+                                    <label for="f-phone">Phone Number <span class="req">*</span></label>
+                                    <input type="tel" id="f-phone" name="phone" placeholder="+60 12-345 6789" required autocomplete="tel">
+                                    <span class="f-err" id="phoneErr"></span>
+                                </div>
+                                <div class="f-group">
+                                    <label for="f-company">Company Name</label>
+                                    <input type="text" id="f-company" name="company" placeholder="Your company (optional)" autocomplete="organization">
+                                </div>
+                            </div>
+                            <div class="f-group">
+                                <label for="f-course">Course Interested In <span class="req">*</span></label>
+                                <select id="f-course" name="course" required>
+                                    <option value="" disabled selected>Select a course or programme</option>
+                                    <option value="Transforming Marketing with AI">Transforming Marketing with AI</option>
+                                    <option value="Digital Marketing Fundamentals">Digital Marketing Fundamentals</option>
+                                    <option value="Business Strategy &amp; Planning">Business Strategy &amp; Planning</option>
+                                    <option value="Professional Communication &amp; Leadership">Professional Communication &amp; Leadership</option>
+                                    <option value="Corporate Training (Customised)">Corporate Training (Customised)</option>
+                                    <option value="Other / Not Sure Yet">Other / Not Sure Yet</option>
+                                </select>
+                                <span class="f-err" id="courseErr"></span>
+                            </div>
+                            <div class="f-group">
+                                <label for="f-msg">Message</label>
+                                <textarea id="f-msg" name="message" rows="4" placeholder="Tell us about your training needs, team size, preferred dates, or any questions…"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit" id="submitBtn">
+                                <span id="btnText"><i class="fas fa-paper-plane"></i> Send Enquiry</span>
+                                <span id="btnLoad" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Success state -->
+                    <div id="formSuccess" class="f-success" style="display:none;">
+                        <div class="fs-ico"><i class="fas fa-circle-check"></i></div>
+                        <h3>Enquiry Sent Successfully!</h3>
+                        <p>Thank you for your interest. Our team will be in touch within 1–2 business days.</p>
+                        <button onclick="resetEnquiryForm()" class="btn btn-outline-dark">Send Another Enquiry</button>
+                    </div>
+
+                    <!-- Error state -->
+                    <div id="formErrorMsg" class="f-error-msg" style="display:none;">
+                        <div class="fe-ico"><i class="fas fa-circle-exclamation"></i></div>
+                        <p>Something went wrong. Please try again or email us directly at enquiries@jtbusinessinstitute.com</p>
+                        <button onclick="document.getElementById('formErrorMsg').style.display='none'" class="btn btn-outline-dark">Try Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="ft-grid">
+                    <div class="ft-brand">
+                        <a href="#home" class="footer-logo">
+                            <span class="logo-mark">JT</span>
+                            <span class="logo-name">Business Institute</span>
+                        </a>
+                        <p>Empowering professionals and businesses through practical, industry-relevant training in AI, marketing, business, and workplace skills.</p>
+                        <div class="socials">
+                            <a href="#" class="soc" aria-label="Facebook"  target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="soc" aria-label="LinkedIn"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="soc" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="soc" aria-label="YouTube"   target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="ft-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#courses">Courses</a></li>
+                            <li><a href="#ai-marketing">AI Marketing Course</a></li>
+                            <li><a href="#corporate">Corporate Training</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-links">
+                        <h4>Our Programmes</h4>
+                        <ul>
+                            <li><a href="#courses">Artificial Intelligence</a></li>
+                            <li><a href="#courses">Digital Marketing</a></li>
+                            <li><a href="#courses">Business &amp; Management</a></li>
+                            <li><a href="#courses">Workplace Skills</a></li>
+                            <li><a href="#courses">Corporate Training</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-contact">
+                        <h4>Contact Us</h4>
+                        <div class="fc"><i class="fas fa-envelope"></i><span>enquiries@jtbusinessinstitute.com</span></div>
+                        <div class="fc"><i class="fab fa-whatsapp"></i><span>+60 12-345 6789</span></div>
+                        <div class="fc"><i class="fas fa-location-dot"></i><span>Kuala Lumpur, Malaysia</span></div>
+                        <div class="fc"><i class="fas fa-clock"></i><span>Mon–Fri: 9am – 6pm</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 JT Business Institute. All rights reserved.</p>
+                <p>Empowering Professionals for the Future of Business.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
